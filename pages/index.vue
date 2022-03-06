@@ -6,7 +6,7 @@
   <div>
     <HeaderNav/>
 
-    <GlowingCard/>
+
     <Hero/>
 
 <!--    <FullVersion/>-->
@@ -26,9 +26,10 @@ import FullVersion from "@/components/FullVersion";
 import HeaderNav from "@/components/HeaderNav";
 import Hero from "@/components/Hero";
 import CTA from "@/components/CTA";
+import Resume from "@/components/Resume";
 export default {
   name: 'IndexPage',
-  components:{Styling,StylingTwo,Javascript,Combined,FullVersion,Hero,HeaderNav,CTA}
+  components:{Styling,StylingTwo,Javascript,Combined,FullVersion,Hero,HeaderNav,CTA,Resume}
 }
 </script>
 

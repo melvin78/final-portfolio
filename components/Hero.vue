@@ -626,7 +626,7 @@ export default {
 
     tl.to("#intro-text", {text: "Hi,I'm Melvin", duration: 1, delay: 1, ease: "linear"});
     tl.to("#desc-text", {text: "Crazy about tech", duration: 1, delay: 1, ease: "power1.easeInOut"});
-    tl.to("#desc-text", {text: "A Fullstack Developer", duration: 1, delay: 1, ease: "power1.easeInOut"});
+    tl.to("#desc-text", {text: "Fullstack Developer", duration: 1, delay: 1, ease: "power1.easeInOut"});
     tl.from("#portfolio", {y: 40})
     tl.call(() => {
       this.show = true
