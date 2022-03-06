@@ -34,5 +34,8 @@ export default {
 
 <style>
 
+html {
+  font-family: 'Hubballi', cursive;}
+
 
 </style>
