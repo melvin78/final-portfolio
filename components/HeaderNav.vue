@@ -3,7 +3,7 @@
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
       <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
         <img class="object-cover w-16 h-16 border-2 border-green-600 rounded-full"
-             src="m.jpg"
+             src="profile.jpg"
              alt="Avatar" />
         <span @click="$router.push('/')" class="ml-3 hover:underline text-2xl text-white font-extralight link link-hover hover:text-blue-400 cursor-pointer">Home</span>
       </a>
@@ -23,10 +23,14 @@
 
 <script>
 export default {
-  name: "HeaderNav"
+  name: "HeaderNav",
+
+
 }
 </script>
 
 <style scoped>
-
+html{
+  font-family: 'Fredoka', sans-serif;
+}
 </style>

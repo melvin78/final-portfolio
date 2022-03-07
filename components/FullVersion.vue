@@ -11,36 +11,10 @@ export default {
   mounted() {
     gsap.registerPlugin(MotionPathPlugin)
 
-    const angles = [0, 45, 90, 135, 180, 225, 270, 315];
     const rays = gsap.utils.toArray('.icons');
 
-    const time = 300,
-      animEase = "linear";
-
-    gsap.set(["#rocket", "#rocket--self"], {
-      xPercent: -50,
-      yPercent: -50,
-      transformOrigin: "center center"
-    });
-
-    const smallBirdTimeline = gsap.timeline()
 
 
-    // smallBirdTimeline.to("#cog-one", {
-    //
-    //
-    //   duration: 1,
-    //   ease: "power1.inOut",
-    //   transformOrigin:"50% 50%",
-    //   motionPath:{
-    //     path:"#path-one",
-    //     start:0,
-    //     end:1,
-    //     align:"#path-one",
-    //     alignOrigin:[0.5,0.5]
-    //
-    //   }
-    // });
 
 
       gsap.to("#cog-one",{

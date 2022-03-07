@@ -36,7 +36,8 @@ export default {
 <style>
 
 html {
-  font-family: 'Hubballi', cursive;}
+  font-family: 'Fredoka', sans-serif;
+}
 
 
 </style>

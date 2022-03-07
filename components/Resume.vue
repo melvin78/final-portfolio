@@ -4,11 +4,11 @@
   <div class="container mx-auto max-w-screen-xl text-white">
     <main
       id="wrapper"
-      class="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl"
+      class="flex flex-col sm:flex-row-reverse sm:m-12 shadow-2xl bg-gradient-to-r from-blue-500"
     >
       <div
         id="sidebar"
-        class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 to-white"
+        class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-blue-300"
       >
         <div class="px-2 mb-12">
           <img
@@ -28,47 +28,14 @@
               class="inline w-6 mr-4"
               alt="Mail icon"
             />
-            <a href="mailto:">dannydev@example.com</a>
+            <a href="mailto:">melvin11665@gmail.com</a>
           </div>
-          <div class="flex items-center my-3">
-            <img
-              src="/assets/call-outline.svg"
-              class="inline w-6 mr-4"
-              alt="Phone icon"
-            />
-            <a href="tel:">0123 456 789</a>
-          </div>
-          <div class="flex items-center my-3">
-            <img
-              src="/assets/home-outline.svg"
-              class="inline w-6 pb-1 mr-4"
-              alt="House icon"
-            />
-            <div>
-              <p>Dev Street 13</p>
-              <p>Dev Town</p>
-            </div>
-          </div>
+
         </div>
 
         <div class="font-light text-lg px-2 mb-12">
-          <h2 class="text-xl font-semibold mb-4">Personal</h2>
-          <div class="flex items-center my-3">
-            <img
-              src="/assets/egg-outline.svg"
-              class="inline w-6 mr-4"
-              alt="Egg Icon"
-            />
-            <span>Born on 27th of May 2000</span>
-          </div>
-          <div class="flex items-center my-3">
-            <img
-              src="/assets/people-outline.svg"
-              class="inline w-6 mr-4"
-              alt="Two Persons Icon"
-            />
-            <span>Married, two kids</span>
-          </div>
+
+
         </div>
 
         <div class="font-light text-lg px-2 mb-12">
@@ -79,51 +46,26 @@
               class="inline w-6 mr-4"
               alt="GitHub Logo"
             />
-            <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/melvin78" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
-          <div class="flex items-center my-3">
-            <img
-              src="/assets/logo-stackoverflow.svg"
-              class="inline w-6 mr-4"
-              alt="Stack Overflow Logo"
-            />
-            <a href="#" target="_blank" rel="noopener noreferrer"
-            >StackOverflow</a
-            >
-          </div>
+
           <div class="flex items-center my-3">
             <img
               src="/assets/logo-linkedin.svg"
               class="inline w-6 mr-4"
               alt="LinkedIn Logo"
             />
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/melvin-ochieng-ezeky78" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
-          <div class="flex items-center my-3">
-            <img
-              src="/assets/logo-twitter.svg"
-              class="inline w-6 mr-4"
-              alt="Twitter Logo"
-            />
-            <a href="#" target="_blank" rel="noopener noreferrer"
-            >@twitter_handle</a
-            >
-          </div>
-          <div class="flex items-center my-3">
-            <img
-              src="/assets/logo-codepen.svg"
-              class="inline w-6 mr-4"
-              alt="CodePen Logo"
-            />
-            <a href="#" target="_blank" rel="noopener noreferrer">CodePen</a>
-          </div>
+
+
           <div class="flex items-center my-3">
             <img
               src="/assets/globe-outline.svg"
               class="inline w-6 mr-4"
               alt="Globe icon"
             />
-            <a href="#" target="_blank" rel="noopener noreferrer"
+            <a href="https://webmelvin.me" target="_blank" rel="noopener noreferrer"
             >Portfolio</a
             >
           </div>
@@ -134,45 +76,47 @@
           <ul class="list-none">
             <li>
               <label for="js-skill">JavaScript</label>
-              <progress id="js-skill" max="100" value="70"></progress>
+              <progress id="js-skill" max="100" value="80"></progress>
             </li>
             <li>
-              <label for="vue-skill">Vue / Vuex</label>
+              <label for="vue-skill">Vue / Nuxt.js</label>
               <progress id="vue-skill" max="100" value="80"></progress>
             </li>
             <li>
-              <label for="react-skill">React</label>
-              <progress id="react-skill" max="100" value="66"></progress>
+              <label for="c-sharp-skill">C# /.Net</label>
+              <progress id="c-sharp-skill" max="100" value="66"></progress>
             </li>
             <li>
-              <label for="nextjs-skill">Next.js</label>
-              <progress id="nextjs-skill" max="100" value="72"></progress>
+              <label for="php-skill">PHP / Laravel</label>
+              <progress id="php-skill" max="100" value="72"></progress>
             </li>
             <li>
-              <label for="eleventy-skill">Eleventy</label>
-              <progress id="eleventy-skill" max="100" value="66"></progress>
+              <label for="mysql-skill">MySQL</label>
+              <progress id="mysql-skill" max="100" value="76"></progress>
             </li>
             <li>
-              <label for="node-skill">Node / Express.js</label>
-              <progress id="node-skill" max="100" value="45"></progress>
+              <label for="pyhton-skill">Python / Django </label>
+              <progress id="pyhton-skill" max="100" value="45"></progress>
             </li>
             <li>
-              <label for="css-skill">SCSS</label>
+              <label for="css-skill">CSS</label>
               <progress id="css-skill" max="100" value="75"></progress>
             </li>
             <li>
-              <label for="design-skill">Inkscape / Figma</label>
-              <progress id="design-skill" max="100" value="62"></progress>
+              <label for="design-skill">Figma</label>
+              <progress id="design-skill" max="100" value="32"></progress>
+            </li>
+            <li>
+              <label for="three-skill">Three Js</label>
+              <progress id="three-skill" max="100" value="22"></progress>
             </li>
             <li>
               <div>Infrastructure / Hosting / DB</div>
               <p class="leading-8">
-                <span class="rounded-xl bg-gray-300 px-3">AWS</span>
-                <span class="rounded-xl bg-gray-300 px-3">Vercel</span>
-                <span class="rounded-xl bg-gray-300 px-3">Heroku</span>
-                <span class="rounded-xl bg-gray-300 px-3">DynamoDB</span>
-                <span class="rounded-xl bg-gray-300 px-3">MongoDB</span>
-                <span class="rounded-xl bg-gray-300 px-3">SQLite</span>
+                <span class="rounded-xl bg-blue-300 px-3">Digital Ocean</span>
+                <span class="rounded-xl bg-red-300 px-3">Caprover </span>
+                <span class="rounded-xl bg-green-300 px-3">Redis</span>
+                <span class="rounded-xl bg-gray-300 px-3">Rabbit MQ</span>
               </p>
             </li>
           </ul>
@@ -181,66 +125,61 @@
         <div class="font-light text-lg px-2 mb-12">
           <h2 class="text-xl font-semibold mb-4">Education</h2>
           <h3 class="font-semibold">BSc Computer Science</h3>
-          <p>2016 - 2019 University of London</p>
+          <p>2017-2021 Catholic University Of Eastern Africa</p>
         </div>
 
         <div class="font-light text-lg px-2 mb-12">
           <h2 class="text-xl font-semibold mb-4">Languages</h2>
-          <h3 class="font-semibold">German</h3>
-          <p>Native</p>
-          <h3 class="font-semibold">English</h3>
-          <p>Fluent</p>
+
+          <ul class='marker:text-green list-outside list-disc ml-6'>
+            <li>English - Fluent</li>
+            <li>Swahili - Native</li>
+            <li> Spanish - Intermediate</li>
+          </ul>
         </div>
       </div>
       <div class="content w-full p-12">
         <div id="profile" class="prose">
-          <h2 class="section-headline">Profile</h2>
-          <p>
-            I'm a self-taught web developer focusing on the core web
-            fundamentals - HTML, CSS and JS. I'm experienced in frontend
-            frameworks like Vue and React and static site generators like
-            Next.js and Eleventy. I write SCSS or use CSS frameworks like
-            TailwindCSS, Bootstrap or Bulma to speed up styling of my
-            projects.
+          <div class="relative flex py-5 items-center">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <span class="flex-shrink mx-4 text-gray-400 text-2xl">Profile</span>
+            <div class="flex-grow border-t border-gray-400"></div>
+          </div>
+          <p class="font-light">
+            Innovative, task driven developer with 3+ years of experience in web design and development
+            across diverse industries.Knowledgeable in user interface, testing, and debugging processes.
+            Bringing forth expertise in design, installation, testing and maintenance of web systems.
+            Equipped with a diverse and promising skill set. Proficient in an assortment of technologies,
+            including JavaScript,C#,PHP and MySQL.
           </p>
-          <p>
-            I am highly motivated in expanding my horizons day by day for
-            better performance, testing and user experience.
-          </p>
+
         </div>
-        <hr class="mt-8 mb-12" />
         <div id="experience" class="prose">
-          <h2 class="section-headline">Experience</h2>
+          <div class="relative flex py-5 items-center">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <span class="flex-shrink mx-4 text-gray-400 text-2xl">Work Experience</span>
+            <div class="flex-grow border-t border-gray-400"></div>
+          </div>
           <div>
-            <h3>Example Inc</h3>
+            <h3 class="font-bold">Centrino Technologies Ltd. Nairobi/Kenya</h3>
             <section class="mb-6">
               <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                Jul.&nbsp;2019:
+                May.&nbsp;2021- Present
               </div>
-              <div class="lg:inline-block lg:w-8/12 w-full">
-                Fullstack Developer
+              <div class="italic lg:inline-block lg:w-8/12 w-full">
+                Backend Developer
               </div>
             </section>
             <section class="mb-6">
               <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                Task:
+                Tasks:
               </div>
-              <div class="lg:inline-block lg:w-8/12 w-full">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </div>
-            </section>
-            <section class="mb-6">
-              <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                Description:
-              </div>
-              <div class="lg:inline-block lg:w-8/12 w-full">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
+              <div class="lg:inline-block lg:w-8/12 w-full font-light">
+                <li class="text-black">
+                  <ul class="text-white font-light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sollicitudin convallis viverra.
+                  </ul>
+                </li>
               </div>
             </section>
             <section class="mb-6">
@@ -355,40 +294,6 @@
       </div>
     </main>
   </div>
-  <footer
-    class="mt-12 text-center flex justify-center flex-col md:flex-row mx-12"
-  >
-    <a
-      href="https://chrisko.io/"
-      class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0"
-    >Made with ❤️ by Chrisko</a
-    >
-    <a
-      href="https://tailwindcss.com/"
-      class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0"
-    >TailwindCSS</a
-    >
-    <a
-      href="https://vitejs.dev/"
-      class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0"
-    >Vite</a
-    >
-    <a
-      href="https://github.com/L33T-KR3W/push-dir"
-      class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0"
-    >Push Dir</a
-    >
-    <a
-      href="https://ionicons.com/"
-      class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0"
-    >Ionicons</a
-    >
-    <a
-      href="https://unsplash.com/@jackofallstreets?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-      class="text-sm px-4 py-2 m-2 text-gray-600 border-gray-400 border-2 rounded flex-shrink-0"
-    >Photo by Jack Finnigan</a
-    >
-  </footer>
   </div>
 </template>
 
@@ -399,5 +304,7 @@ export default {
 </script>
 
 <style scoped>
-
+html{
+  font-family: 'Fredoka', sans-serif;
+}
 </style>
