@@ -33,7 +33,7 @@
       </div>
 
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 mt-2">
-        <svg width="388" height="325" viewBox="0 0 388 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="my-svg" width="388" height="325" viewBox="0 0 388 325" fill="none" xmlns="http://www.w3.org/2000/svg">
 
           <g id="javascript">
             <g id="vuejs" class="icons">
@@ -607,6 +607,7 @@
 import FullVersion from "@/components/FullVersion";
 import {gsap} from "gsap";
 import {TextPlugin} from "gsap/TextPlugin";
+import {Draggable} from "gsap/all"
 
 export default {
   name: "Hero",
@@ -619,6 +620,7 @@ export default {
   },
   mounted() {
     gsap.registerPlugin(TextPlugin);
+    gsap.registerPlugin(Draggable)
 
     const master = gsap.timeline();
 
@@ -699,6 +701,8 @@ export default {
       stagger: -0.3
     })
 
+
+
     master.add(tl)
     master.add(iconsTimeline)
     master.add(cogTimeline)
@@ -709,6 +713,10 @@ export default {
 </script>
 
 <style scoped>
+html{
+  font-family: 'Fredoka', sans-serif;
+
+}
 .fade-enter-active, .fade-leave-active {
   transition: all 1s;
 }
