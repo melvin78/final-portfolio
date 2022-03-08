@@ -179,12 +179,15 @@
                 <div class="lg:inline-block lg:w-8/12 w-full font-light">
                   <li>
                     <ul class="text-white font-light">
-                      Migrate legacy codebase running on Microsoft WCF Services to work with REST architecture
-
+                      Maintain and update a Management Information System that handles transactions in micro-finance institutions(SACCOS)
+                      running on .NET framework to .NET 6.
                     </ul>
-                    <ul class="text-white font-light">
-                      Maintain and update Management Information System that handles
-                    </ul>
+                  </li>
+                  <li>
+                  <ul class="text-white font-light">
+                    Migrate legacy codebase running on WCF Services to use REST architecture and also implement message brokers with the help
+                    of RabbitMQ that would ensure scalability
+                  </ul>
                   </li>
                 </div>
               </section>
