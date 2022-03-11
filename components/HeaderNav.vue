@@ -10,6 +10,8 @@
       <nav class="md:ml-auto flex flex-wrap items-center justify-center">
         <a class="text-2xl hover:underline mr-5 text-white link link-hover hover:text-blue-400 cursor-pointer" >Work</a>
         <a class="text-2xl hover:underline mr-5 text-white link link-hover hover:text-blue-400 cursor-pointer" @click="$router.push('/resume')">Resume</a>
+        <a class="text-2xl hover:underline mr-5 text-white link link-hover hover:text-blue-400 cursor-pointer" @click="$router.push('/resume')">Blog</a>
+
       </nav>
       <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Contacts
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
