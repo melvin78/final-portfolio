@@ -156,8 +156,8 @@
                   </li>
                   <li>
                   <ul class="text-white font-light  mt-1">
-                    Migrate legacy codebase running on WCF Services to use REST and microservices architecture and message brokers with the help
-                    of RabbitMQ that would ensure scalability and performance during high loads.
+                    Migrate legacy codebase running on WCF Services to use REST and microservices architecture with the help of message brokers
+                   that would ensure scalability and performance during high loads.
                   </ul>
                   </li>
                   <li>
