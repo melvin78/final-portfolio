@@ -35,9 +35,6 @@ export default {
 
 <style>
 
-html {
-  font-family: 'Fredoka', sans-serif;
-}
 
 
 </style>
