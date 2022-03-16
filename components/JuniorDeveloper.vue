@@ -10,7 +10,7 @@
           <br/>
           <span class="text-xs text-blue-600 uppercase dark:text-blue-400">6 MIN READ</span>
 
-          <a href="#" class="block mt-2 text-4xl font-semibold  ">Life As A Junior Developer</a>
+          <a href="#" class="block mt-2 text-5xl font-semibold  ">Life As A Junior Developer</a>
           <p class="mt-2 text-black leading-relaxed text-justify ">
             Everyone passes through this stage no matter the speciality at one point you were a junior,a temp somewhere
             or intern. Before you become a dentist or even perform a surgery you will first have to learn or see someone
@@ -79,7 +79,7 @@
             asking very easy questions. Trust me have been there you later come to realize if you don't ask there's no
             progress you are going to make.<br>
 
-          <div class="font-semibold text-3xl mt-2">My Experience</div>
+          <div class="font-semibold text-4xl mt-2">My Experience</div>
           <p class="mt-2  leading-relaxed text-justify">
             My first dev job was a nightmare where every day I thought for sure "today
             they'll realize I know nothing and fire me". The codebase was large, it was one big monolithic solution
@@ -100,11 +100,12 @@
             complete the task and learn more and more.
             My tasks was to help refractor some C# code the project was running on .NET Framework. I had trouble
             catching up since i
-            now i had to declare types before declaring variables,classes or functions. "Cannot convert type 'int' to
-            type 'string' " error
+            had to now declare types before declaring variables,classes or functions. <code>"Cannot convert type 'int'
+            to
+            type 'string' </code>" error
             messages would haunt my sleep. This was because i was coming from a PHP background , from dynamically typed
             to statically typed.If you don't know the difference, a statically typed language is where every
-            detail about the variables and all the data types must be known before we do the compiling process while in
+            detail about the variables and all the data types must be known before we do the compiling process, while in
             statically typed languages
             type checking takes place while the program is running (run-time) . In this type of language, there is no
             need to specify the data type of each variable while writing code.
@@ -119,28 +120,35 @@
             class your lecturer will tell you to write the units
             after your answer after every calculation you do. If it's a unit of distance you would use metres or
             kilometers (sorry my American
-            friends :) ), time you would seconds,minutes or hours and temperature you would use degrees (again sorry my
+            friends :) ), time you would seconds,minutes or hours and temperature you would use degrees celsius (again sorry my
             American friends).
             <br>
             With the same analogy think of your lecturer or the one marking your answer as the
             compiler and your answer as the type or data type. So if i give my answer without writing the units then my
-            lecturer is forced to figure out in what units my answer is in while he/she is marking my answer sheet. In a
+            lecturer is forced to figure out in what units my answer is, while he/she is marking my answer sheet. In a
             nutshell that's how dynamically typed languages behave. You just declare a variable without saying its of
-            what type "its SI unit" and let the compiler "the lecture" figure that out during runtime "when marking your
+            what type "its SI unit" and let the compiler "the lecturer" figure that out during runtime "when marking your
             answer sheet".<br>
             Now for statically typed the lecturer "compiler" decides and says i won't mark any answer that doesn't
-            indicate in what units the answer is in
+            indicate in what units the answer is
             . So even before your code is compiled an error is thrown. Wanna learn more here is a couple of <a
             class="underline hover:text-blue-400"
             href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages"
             target="_blank">
             answers
-          </a> on stackoverflow about the topic(Remember my advice!)
+          </a> on stackoverflow about the topic(Remember my advice!)<br/>
+
+            Fast foward to one and a half years later i was able to contribute to the project fully and even add new
+            features to the codebase.
+            The time it took me to write a piece of code without running into issues also reduced. It was all coming
+            together.As long as you are ready to devote your spare time into learning the basics of the language
+            and asking questions where you are not sure you will be good at your job within no time.
+
           </p>
 
-          <div class="font-semibold text-3xl mt-2">Overcoming the challenges</div>
+          <div class="font-semibold text-4xl mt-2">Overcoming the challenges</div>
 
-          <div class="flex justify-center mt-2 mb-2">
+          <div class="flex justify-center mt-5 mb-5">
             <div class="max-w-4xl p-4 text-gray-800 bg-white rounded-lg shadow-lg ">
               <div class="mb-2">
                 <div class="h-3 text-3xl text-left text-gray-600">“</div>
@@ -159,7 +167,7 @@
           <p class="leading-relaxed text-justify mt-2">
             Once i was able to change my mentality it was all free flow. One thing you should realize about learning how
             to code,
-            its just like learning a new linguistic language or learning how to play a musical instrument.It requires
+            its just like learning a new linguistic language or learning how to play a musical instrument,it requires
             constant practice and dedication.
             Not to brag but i am also a guitarist(self-taught). In order to master such a skill you need to know the
             fundamentals of music, what a note is, what music
@@ -172,20 +180,36 @@
             Learning how to program is no exception, it requires dedication and practice in order to master the
             skill.Thus the quote above, there are so many programming languages
             out there. New frameworks(JavaScript being one of the main culprits) are sprouting faster than mushrooms
-            growing on a dead tree stump in the middle of the forest.
+            growing on a dead tree stump.
             If you tell yourself that i want to learn all these languages/frameworks you will burn out very fast. The so
             called giant tech companies of silicon valley
-            FAANG ( Facebook,Amazon,Apple,Netflix and Google) dont usually care what programming language you are good at, what they care about is
-            do you understand the fundamentals of programming i.e data structures and how to solve problems with the help of algorithms.
-            Once you master one programming language (practice one kick 10,000 times) instead of learning so many at once (practice 10000
-            different kicks at once) you can now start calling yourself a senior developer.
+            FAANG ( Facebook,Amazon,Apple,Netflix and Google) dont usually care what programming language you are good
+            at, what they care about is
+            do you understand the fundamentals of programming i.e data structures and how to solve problems with the
+            help of algorithms.
+            Once you master one programming language (practice one kick 10,000 times) instead of learning so many at
+            once (practice 10000
+            different kicks at once) you will be able to grow as a developer. In the music world we have a saying you
+            have to practice 40 hours a day if you are to master or learn on how to play a musical piece.
+          </p>
+          <div class="font-semibold text-4xl mt-2 mb-2">Conclusion</div>
+          <p class="mb-5">
+            This has been my two cents on how the experience was when i was starting out as a developer, it might or might not apply
+            to your situation but this is how i managed. So before you think of giving up or quitting try following
+            these steps and everything little thing is gonna be alright <bdi class="text-sm font-extralight ">* insert Bob Marley voice from three little birds *</bdi>
 
-            In the music world we have a saying you have to practice 40 hours a day if you want to
-            perfect playing a piece.
           </p>
 
+          <div class="relative flex py-5 items-center">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <span class="flex-shrink mx-4 text-2xl text-gray-800"></span>
+            <div class="flex-grow border-t border-gray-400"></div>
+          </div>
 
         </div>
+
+          <ShareComponent/>
+
 
       </div>
     </main>
