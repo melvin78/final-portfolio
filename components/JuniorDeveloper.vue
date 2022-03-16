@@ -1,24 +1,27 @@
 <template>
   <div>
     <HeaderNav/>
-    <main class="max-w-6xl text-white mx-auto overflow-hidden  shadow-2xl ">
+    <main class="max-w-7xl  mx-auto overflow-hidden  shadow-2xl bg-gray-50">
       <img class="object-cover w-full h-96" src="/important/junior-dev.jpg" alt="Article">
 
-      <div class="p-6 text-white">
+      <div class="p-6 text-black ">
         <div>
-          <span class="text-xs font-light text-blue-600 uppercase dark:text-blue-400">20 JANUARY 2022</span>
-          <a href="#" class="block mt-2 text-4xl font-semibold  text-white">Life As A Junior Developer</a>
-          <p class="mt-2 text-white font-light leading-relaxed text-justify ">
+          <span class="text-xs font-bold text-blue-600 uppercase dark:text-blue-400">20 JANUARY 2022</span>
+          <br/>
+          <span class="text-xs text-blue-600 uppercase dark:text-blue-400">6 MIN READ</span>
+
+          <a href="#" class="block mt-2 text-4xl font-semibold  ">Life As A Junior Developer</a>
+          <p class="mt-2 text-black leading-relaxed text-justify ">
             Everyone passes through this stage no matter the speciality at one point you were a junior,a temp somewhere
             or intern. Before you become a dentist or even perform a surgery you will first have to learn or see someone
             do it. Last time i visited the dentist to get my wisdom tooth removed there was someone beside him who
-            would pass the surgical equipments to the dentist as the dentist was mercilessly trying to pry out my
+            would pass the surgical equipments to the dentist as he was mercilessly trying to pry out my
             impacted tooth. Its safe to assume he was the junior.
             An aspiring blacksmith will look
             at how the experience one is working and at what temperature is the iron being smelted before its casted. A
             master chef will show his kitchen staff how to prepare a dish. Letting them know all the ingredients
-            required, the right amount
-            of cooking heat required to cook a well done, rare, or medium rare dish if its meat/lamb was being
+            needed, the right amount
+            of cooking heat required to prepare a well done, rare, or medium rare dish if its meat/lamb was being
             cooked. I hope you can see where am going with this.
 
 
@@ -27,7 +30,7 @@
             <img src="https://media.giphy.com/media/xT0xeHBBKysIbqxRcc/giphy.gif">
 
           </div>
-          <p class="mt-3 text-white font-light leading-relaxed text-justify ">
+          <p class="mt-3  leading-relaxed text-justify ">
             Basically all these skills in order to better master them, apprenticeship is the way to go. As a developer
             who is just starting out the same applies. Learn and see what your senior is doing and implement it, let it
             be part of your repertoire. Don't ever be afraid of asking questions if you are not sure of something. How
@@ -39,70 +42,149 @@
             hand all the way through. He/She is meant to hold your hands at the traffic light stop and let go of your
             hand once
             the pedestrian light turns green and tells you to cross. He is there to guide you and lead the way he/she
-            won't cross the road with you to the other side that's all up to you. So take initiative and soak up whatever
+            won't cross the road with you to the other side that's all up to you. So take initiative and soak up
+            whatever
             you learn.
           </p>
 
-          <p class="mt-2 text-white font-light leading-relaxed text-justify ">
+          <p class="mt-2  leading-relaxed text-justify ">
             Take the intitiative first and try to solve the problem do a little research, do a stack overflow search see
             what results come up copy paste it and see if it works. There's nothing wrong with copying someone's else
             code, the only issue comes when you are copying it blindly and you don't understand what the code does.
             <br>
             Unpopular opinion here, the best solution you are always looking for on stack overflow isn't always the
             first one
-            marked as an answer or the one that is highly upvoted. It's usually the second or third one or the one you usually
+            marked as an answer or the one that is highly upvoted. It's usually the second or third one or the one you
+            usually
             find in the comment section.</p>
 
           <div class="flex justify-center mt-2">
             <img src="https://media.giphy.com/media/kGCuRgmbnO9EI/giphy.gif">
 
           </div>
-          <p class="mt-2 text-white font-light leading-relaxed text-justify">
+          <p class="mt-2  leading-relaxed text-justify">
             So keep scrolling see what others are saying after they tried out that solution, did it
             work? or is it no longer working after all, that answer might not apply to the version of framework or
             language you are using right
             now. That question might have been asked over 11 years ago and 11 years is enough time for a language to
             change drastically in terms of code syntax and performance.
-            PHP is a very good example, there's a very big difference and i mean very big difference between PHP version 5 and current
-            version 8. Languages evolve overtime, javascript is another example with the introduction of ES6 standards and typescript.
+            PHP is a very good example, there's a very big difference and i mean very big difference between PHP version
+            5 and current
+            version 8. Languages evolve overtime, javascript is another example with the introduction of ES6 standards
+            and typescript.
             So before you copy that marked answer on stack overflow assess and look at other solutions offered.</p>
 
-          <p class="mt-2 text-white font-light leading-relaxed text-justify">
+          <p class="mt-2  leading-relaxed text-justify">
             One thing that most junior dev struggle with, is they are afraid to ask questions ashamed that they are
             asking very easy questions. Trust me have been there you later come to realize if you don't ask there's no
-            progress you are going to make. My first dev job was a nightmare where every day I thought for sure "today
-            they'll realize I know nothing and fire me". My advice is to remember to push past those feelings. When you
+            progress you are going to make.<br>
+
+          <div class="font-semibold text-3xl mt-2">My Experience</div>
+          <p class="mt-2  leading-relaxed text-justify">
+            My first dev job was a nightmare where every day I thought for sure "today
+            they'll realize I know nothing and fire me". The codebase was large, it was one big monolithic solution
+            having almost 100+ projects.
+            At first it felt like i didint know anything because it was layers on top of layers on top of layers. I
+            would open one class file, look
+            at the code and my brain couldn't just interpret what was happening.</p>
+
+          <div class="flex justify-center mt-2">
+            <img src="https://media.giphy.com/media/VB5WwlZIt8eRy/giphy.gif">
+          </div>
+          <p class="mt-2  leading-relaxed text-justify">
+            Dont get me wrong the codebase had clear architectural design and had implemented most of the common design
+            patterns and was self documenting.
+            My problem was i wasn't just approaching it with the right mentality .My advice is to remember to push past
+            those feelings. When you
             don't know what to do it feels bad. But once you get into the code and ask a few questions eventually you'll
-            complete the task and learn more and more.<br>
-
-            <p class="mt-2 text-white font-light leading-relaxed text-justify">
-          I remember my first job was as a C# developer , i was coming from a PHP background , from dynamically typed
-          to statically typed. For those who don't know the difference a statically typed language is where evey
-          detail about the variables and all the data types must be known before we do the compiling process while
-          type checking takes place while the program is running (run-time) . In this type of language, there is no
-          need to specify the data type of each variable while writing code.
-        </p>
-
-
-          <p class="mt-2 text-white font-light leading-relaxed text-justify">
-            I know you might be wondering what are these types and data types. Without going so much into the technical bit which will now be
-            another broad topic,
-            data types or types are like the SI units
-            of the computer world. If you ever attended a physics or Math class we are usually told to write the units
-            after your answer. If it's a unit of distance you would use metres or kilometers <i>(sorry my American
-            friends)</i> , time you would seconds,minutes or hours and temperature you would use degrees <i>(again sorry my
-            American friends)</i>.
-            <br>
-            With the same analogy think of your teacher or the one marking your answer as the
-            compiler and your answer as the type or data type. So if i give my answer without writing the units then my
-            teacher is forced to figure out in what units my answer is in while he/she is marking my paper. In a
-            nutshell that's how dynamically typed languages behave. You just declare a variable without saying its of
-            what type 'its SI unit' and let the compiler 'the teacher' figure that out during runtime 'when marking your answer sheet'.<br>
-            Now for statically typed the teacher 'compiler' decides and says i won't mark any answer that doesn't show the
-            units. So even before your code is compiled an error is thrown. There's still a debate on which language one
-            should use, each has it's own pro's and cons more on that later.
-
+            complete the task and learn more and more.
+            My tasks was to help refractor some C# code the project was running on .NET Framework. I had trouble
+            catching up since i
+            now i had to declare types before declaring variables,classes or functions. "Cannot convert type 'int' to
+            type 'string' " error
+            messages would haunt my sleep. This was because i was coming from a PHP background , from dynamically typed
+            to statically typed.If you don't know the difference, a statically typed language is where every
+            detail about the variables and all the data types must be known before we do the compiling process while in
+            statically typed languages
+            type checking takes place while the program is running (run-time) . In this type of language, there is no
+            need to specify the data type of each variable while writing code.
           </p>
+
+
+          <p class="mt-2  leading-relaxed text-justify">
+            I know you might be wondering what are these types and data types. I will try my best to explain with an
+            analogy without getting so much into the
+            technical bit of performance and developer experience.<br/>
+            Data types or types are like the SI units of your code. If you ever attended a physics or math
+            class your lecturer will tell you to write the units
+            after your answer after every calculation you do. If it's a unit of distance you would use metres or
+            kilometers (sorry my American
+            friends :) ), time you would seconds,minutes or hours and temperature you would use degrees (again sorry my
+            American friends).
+            <br>
+            With the same analogy think of your lecturer or the one marking your answer as the
+            compiler and your answer as the type or data type. So if i give my answer without writing the units then my
+            lecturer is forced to figure out in what units my answer is in while he/she is marking my answer sheet. In a
+            nutshell that's how dynamically typed languages behave. You just declare a variable without saying its of
+            what type "its SI unit" and let the compiler "the lecture" figure that out during runtime "when marking your
+            answer sheet".<br>
+            Now for statically typed the lecturer "compiler" decides and says i won't mark any answer that doesn't
+            indicate in what units the answer is in
+            . So even before your code is compiled an error is thrown. Wanna learn more here is a couple of <a
+            class="underline hover:text-blue-400"
+            href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages"
+            target="_blank">
+            answers
+          </a> on stackoverflow about the topic(Remember my advice!)
+          </p>
+
+          <div class="font-semibold text-3xl mt-2">Overcoming the challenges</div>
+
+          <div class="flex justify-center mt-2 mb-2">
+            <div class="max-w-4xl p-4 text-gray-800 bg-white rounded-lg shadow-lg ">
+              <div class="mb-2">
+                <div class="h-3 text-3xl text-left text-gray-600">“</div>
+                <p class="px-4 text-sm text-center text-gray-600">
+                  I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick
+                  10,000 times
+                </p>
+                <div class="h-3 text-3xl text-right text-gray-600">”</div>
+                <div class="flex justify-end">
+                  <div class="text-sm font-light italic mt-2">Bruce Lee</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <p class="leading-relaxed text-justify mt-2">
+            Once i was able to change my mentality it was all free flow. One thing you should realize about learning how
+            to code,
+            its just like learning a new linguistic language or learning how to play a musical instrument.It requires
+            constant practice and dedication.
+            Not to brag but i am also a guitarist(self-taught). In order to master such a skill you need to know the
+            fundamentals of music, what a note is, what music
+            scales are and even train yourself to develop some sort of relative pitch to be able to detect notes purely
+            by ear.<br/>
+            In learning a linguistic language such as English, you need to understand the basics of the language, what
+            is a noun,adjective and how to structure them in
+            a sentence. By also practicing on pronunciations you will soon be able to speak fluently<br/>
+
+            Learning how to program is no exception, it requires dedication and practice in order to master the
+            skill.Thus the quote above, there are so many programming languages
+            out there. New frameworks(JavaScript being one of the main culprits) are sprouting faster than mushrooms
+            growing on a dead tree stump in the middle of the forest.
+            If you tell yourself that i want to learn all these languages/frameworks you will burn out very fast. The so
+            called giant tech companies of silicon valley
+            FAANG ( Facebook,Amazon,Apple,Netflix and Google) dont usually care what programming language you are good at, what they care about is
+            do you understand the fundamentals of programming i.e data structures and how to solve problems with the help of algorithms.
+            Once you master one programming language (practice one kick 10,000 times) instead of learning so many at once (practice 10000
+            different kicks at once) you can now start calling yourself a senior developer.
+
+            In the music world we have a saying you have to practice 40 hours a day if you want to
+            perfect playing a piece.
+          </p>
+
+
         </div>
 
       </div>
