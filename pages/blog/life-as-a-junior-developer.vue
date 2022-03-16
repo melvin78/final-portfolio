@@ -6,7 +6,12 @@
 import JuniorDeveloper from "@/components/JuniorDeveloper";
 export default {
   name: "life-as-a-junior-developer",
-  components:{JuniorDeveloper}
+  components:{JuniorDeveloper},
+  head(){
+    return{
+      title:'Life As A Junior Developer'
+    }
+  }
 }
 </script>
 

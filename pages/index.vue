@@ -29,7 +29,12 @@ import CTA from "@/components/CTA";
 import Resume from "@/components/Resume";
 export default {
   name: 'IndexPage',
-  components:{Styling,StylingTwo,Javascript,Combined,FullVersion,Hero,HeaderNav,CTA,Resume}
+  components:{Styling,StylingTwo,Javascript,Combined,FullVersion,Hero,HeaderNav,CTA,Resume},
+  head(){
+    return{
+      title:'Home Paqe'
+    }
+  }
 }
 </script>
 

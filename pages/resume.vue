@@ -6,7 +6,12 @@
 import Resume from "@/components/Resume";
 export default {
   name: "resume",
-  components:{Resume}
+  components:{Resume},
+  head(){
+    return{
+      title:"Resume"
+    }
+  }
 }
 </script>
 

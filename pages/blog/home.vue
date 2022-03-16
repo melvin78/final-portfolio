@@ -71,7 +71,13 @@
 
 <script>
 export default {
-  name: "home"
+  name: "home",
+
+  head(){
+    return{
+      title:'Blog'
+    }
+  }
 }
 </script>
 
