@@ -84,7 +84,7 @@
             My first dev job was a nightmare where every day I thought for sure "today
             they'll realize I know nothing and fire me". The codebase was large, it was one big monolithic solution
             having almost 100+ projects.
-            At first it felt like i didint know anything because it was layers on top of layers on top of layers. I
+            At first it felt like i didn't know anything because it was layers on top of layers on top of layers. I
             would open one class file, look
             at the code and my brain couldn't just interpret what was happening.</p>
 
@@ -96,14 +96,13 @@
             patterns and was self documenting.
             My problem was i wasn't just approaching it with the right mentality .My advice is to remember to push past
             those feelings. When you
-            don't know what to do it feels bad. But once you get into the code and ask a few questions eventually you'll
+            don't know what to do it feels bad,but once you get into the code and ask a few questions eventually you'll
             complete the task and learn more and more.
-            My tasks was to help refractor some C# code the project was running on .NET Framework. I had trouble
-            catching up since i
+            I had trouble catching up since i
             had to now declare types before declaring variables,classes or functions. <code>"Cannot convert type 'int'
             to
             type 'string' </code>" error
-            messages would haunt my sleep. This was because i was coming from a PHP background , from dynamically typed
+            messages was all i could see when i closed my eyes. This was because i was coming from a PHP background , from dynamically typed
             to statically typed.If you don't know the difference, a statically typed language is where every
             detail about the variables and all the data types must be known before we do the compiling process, while in
             statically typed languages
@@ -120,14 +119,16 @@
             class your lecturer will tell you to write the units
             after your answer after every calculation you do. If it's a unit of distance you would use metres or
             kilometers (sorry my American
-            friends :) ), time you would seconds,minutes or hours and temperature you would use degrees celsius (again sorry my
-            American friends).
+            friends its not miles), time you would use seconds,minutes or hours and temperature you would use degrees celsius (again
+            sorry my
+            American friends its not fahrenheit).
             <br>
             With the same analogy think of your lecturer or the one marking your answer as the
             compiler and your answer as the type or data type. So if i give my answer without writing the units then my
             lecturer is forced to figure out in what units my answer is, while he/she is marking my answer sheet. In a
             nutshell that's how dynamically typed languages behave. You just declare a variable without saying its of
-            what type "its SI unit" and let the compiler "the lecturer" figure that out during runtime "when marking your
+            what type "its SI unit" and let the compiler "the lecturer" figure that out during runtime "when marking
+            your
             answer sheet".<br>
             Now for statically typed the lecturer "compiler" decides and says i won't mark any answer that doesn't
             indicate in what units the answer is
@@ -136,9 +137,9 @@
             href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages"
             target="_blank">
             answers
-          </a> on stackoverflow about the topic(Remember my advice!)<br/>
+          </a> on stackoverflow about the topic (Remember my advice when it comes to using stack overflow!)<br/>
 
-            Fast foward to one and a half years later i was able to contribute to the project fully and even add new
+            Fast forward to one and a half years later i was able to contribute to the project fully and even add new
             features to the codebase.
             The time it took me to write a piece of code without running into issues also reduced. It was all coming
             together.As long as you are ready to devote your spare time into learning the basics of the language
@@ -169,20 +170,26 @@
             to code,
             its just like learning a new linguistic language or learning how to play a musical instrument,it requires
             constant practice and dedication.
-            Not to brag but i am also a guitarist(self-taught). In order to master such a skill you need to know the
+            Not to brag but i am also a guitarist. In order to master such a skill you need to know the
             fundamentals of music, what a note is, what music
             scales are and even train yourself to develop some sort of relative pitch to be able to detect notes purely
             by ear.<br/>
             In learning a linguistic language such as English, you need to understand the basics of the language, what
-            is a noun,adjective and how to structure them in
-            a sentence. By also practicing on pronunciations you will soon be able to speak fluently<br/>
+            is a noun,adjective and how to structure them in order to constuct
+            a sentence. If you start practicing on your pronunciations you will soon be able to speak fluently<br/>
 
-            Learning how to program is no exception, it requires dedication and practice in order to master the
+            Learning how to program is no exception. It first starts by learning the basics, what is a method ? a
+            variable ? what is a class
+            when you are in the context of OOP,because no matter the programming language this concepts are the same.
+            The only thing that
+            changes is the syntax, different programming languages will have different ways of defining a method or
+            variable. So before you actually master a programming language you will have to understand the basics of programming. Basically
+            it requires dedication and practice in order to master the
             skill.Thus the quote above, there are so many programming languages
             out there. New frameworks(JavaScript being one of the main culprits) are sprouting faster than mushrooms
             growing on a dead tree stump.
             If you tell yourself that i want to learn all these languages/frameworks you will burn out very fast. The so
-            called giant tech companies of silicon valley
+            called giant tech companies
             FAANG ( Facebook,Amazon,Apple,Netflix and Google) dont usually care what programming language you are good
             at, what they care about is
             do you understand the fundamentals of programming i.e data structures and how to solve problems with the
@@ -194,9 +201,12 @@
           </p>
           <div class="font-semibold text-4xl mt-2 mb-2">Conclusion</div>
           <p class="mb-5">
-            This has been my two cents on how the experience was when i was starting out as a developer, it might or might not apply
-            to your situation but this is how i managed. So before you think of giving up or quitting try following
-            these steps and everything little thing is gonna be alright <bdi class="text-sm font-extralight ">* insert Bob Marley voice from three little birds *</bdi>
+            This has been my two cents on how the experience was when i was starting out as a developer, it might or
+            might not apply
+            to your situation but this is how i managed. So before you think of giving up try following
+            these steps and everything little thing is gonna be alright
+            <bdi class="text-sm font-extralight ">* insert Bob Marley voice from three little birds *</bdi>
+            . I will share more tips on how to even better improve your skills on the next one.
 
           </p>
 
@@ -208,7 +218,7 @@
 
         </div>
 
-          <ShareComponent/>
+        <ShareComponent/>
 
 
       </div>
@@ -221,7 +231,24 @@
 
 <script>
 export default {
-  name: "JuniorDeveloper"
+  name: "JuniorDeveloper",
+  head(){
+    return{
+      title:'Life As a Junior Developer',
+      meta:[
+        { name: 'og:title', hid:'og:title', property:'og:title', content: 'Life as a Junior Developer'},
+        { name: 'og:description', hid:'og:description',property:'og:description', content: 'Making it as a junior developer tips and tricks' },
+        { name: 'og:url', hid:'og:url',property:'og:url', content: 'https://webmelvin.me/blog/life-as-a-junior-developer' },
+        { name: 'og:image', hid:'og:image',property:'og:image', content: 'https://webmelvin.me/important/junior-dev.jpg' },
+        { name: 'og:type', hid:'og:type',property:'og:type', content: 'article' },
+
+
+
+
+
+      ]
+    }
+  }
 }
 </script>
 

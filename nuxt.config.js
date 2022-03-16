@@ -18,7 +18,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
       {
         rel:'stylesheet',
         href:'https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap'
@@ -62,7 +62,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/google-fonts'
+    'vue-social-sharing/nuxt'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
