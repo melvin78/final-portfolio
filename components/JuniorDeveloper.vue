@@ -26,10 +26,7 @@
 
 
           </p>
-          <div class="flex justify-center mt-3 pb-3">
-            <img src="https://media.giphy.com/media/xT0xeHBBKysIbqxRcc/giphy.gif">
 
-          </div>
           <p class="mt-3  leading-relaxed text-justify ">
             Basically all these skills in order to better master them, apprenticeship is the way to go. As a developer
             who is just starting out the same applies. Learn and see what your senior is doing and implement it, let it
@@ -170,9 +167,10 @@
             to code,
             its just like learning a new linguistic language or learning how to play a musical instrument,it requires
             constant practice and dedication.
-            Not to brag but i am also a guitarist. In order to master such a skill you need to know the
+            Not to brag but i am also a professional guitarist and a pretty good one actually. Thats what
+            i usually do with most of my spare time. In order to master such a skill you need to know the
             fundamentals of music, what a note is, what music
-            scales are and even train yourself to develop some sort of relative pitch to be able to detect notes purely
+            scales are and even train yourself to develop some sort of relative pitch to be able to detect music notes purely
             by ear.<br/>
             In learning a linguistic language such as English, you need to understand the basics of the language, what
             is a noun,adjective and how to structure them in order to constuct

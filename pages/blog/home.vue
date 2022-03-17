@@ -7,7 +7,7 @@
           <div class="py-8 flex flex-wrap md:flex-nowrap">
             <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
               <span class="font-semibold title-font text-white">The Mind</span>
-              <span class="mt-1 text-blue-400 text-sm">10 Jan 2022</span>
+              <span class="mt-1 text-blue-400 text-sm">Personal Thoughts & Opinions</span>
             </div>
             <div class="md:flex-grow">
               <h2 class="text-2xl font-medium text-gray-300 title-font mb-2 font-bold">Life of a Junior Developer</h2>
@@ -22,19 +22,18 @@
                 </svg>
               </a>
             </div>
+
           </div>
           <div class="py-8 flex flex-wrap md:flex-nowrap">
             <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <span class="font-semibold title-font text-white">Tech Fundamentals</span>
-              <span class="mt-1 text-blue-400 text-sm">12 Jun 2019</span>
+
             </div>
             <div class="md:flex-grow">
-              <h2 class="text-2xl font-medium text-gray-300 font-bold title-font mb-2">Meditation bushwick direct trade
-                taxidermy shaman</h2>
-              <p class="leading-relaxed text-gray-200">Glossier echo park pug, church-key sartorial biodiesel
-                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke
-                vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-              <a class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Read More
+              <h2 class="text-2xl font-medium text-gray-300 font-bold title-font mb-2">Steps to Becoming a Good Developer
+                </h2>
+              <p class="leading-relaxed text-gray-200">Now that you are finally accustomed with the basics(<i>hopefully you didn't get lost</i>) i will share my
+              thoughts on what's next. The small details that you can add to your toolset to take you to the next level</p>
+              <a @click="$router.push('/blog/the-next-step-to-becoming-a-good-developer')" class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Read More
                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                      stroke-linecap="round" stroke-linejoin="round">
                   <path d="M5 12h14"></path>

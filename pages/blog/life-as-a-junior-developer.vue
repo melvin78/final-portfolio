@@ -9,7 +9,7 @@ export default {
   components:{JuniorDeveloper},
   head(){
     return{
-      title:'Life As A Junior Developer'
+      title:'Blog | Life As A Junior Developer'
     }
   }
 }
