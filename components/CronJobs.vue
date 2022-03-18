@@ -1,31 +1,91 @@
 <template>
   <div>
     <HeaderNav/>
-    <main class="max-w-6xl   mx-auto overflow-hidden  shadow-2xl bg-gray-50">
-      <img class="object-cover w-full h-96" src="/important/junior-dev.jpg" alt="Article">
+    <main class="max-w-6xl  mx-auto overflow-hidden  shadow-2xl bg-gray-50">
+      <img alt="Article" class="object-cover w-full h-96" src="/cronjob.png">
 
       <div class="p-6 text-black ">
         <div>
-          <span class="text-xs font-bold text-blue-600 uppercase dark:text-blue-400">20 JANUARY 2022</span>
+          <span class="text-xs font-bold text-blue-600 uppercase dark:text-blue-400">10 JANUARY 2022</span>
           <br/>
           <span class="text-xs text-blue-600 uppercase dark:text-blue-400">6 MIN READ</span>
 
-          <a href="#" class="block mt-2 text-5xl font-semibold  ">Life As A Junior Developer</a>
+          <a class="block mt-2 text-5xl font-semibold" href="#">Creating automated tasks in .NET</a>
           <p class="mt-2 text-black leading-relaxed text-justify ">
-            Everyone passes through this stage no matter the speciality at one point you were a junior,a temp somewhere
-            or intern. Before you become a dentist or even perform a surgery you will first have to learn or see someone
-            do it. Last time i visited the dentist to get my wisdom tooth removed there was someone beside him who
-            would pass the surgical equipments to the dentist as he was mercilessly trying to pry out my
-            impacted tooth. Its safe to assume he was the junior.
-            An aspiring blacksmith will look
-            at how the experience one is working and at what temperature is the iron being smelted before its casted. A
-            master chef will show his kitchen staff how to prepare a dish. Letting them know all the ingredients
-            needed, the right amount
-            of cooking heat required to prepare a well done, rare, or medium rare dish if its meat/lamb was being
-            cooked. I hope you can see where am going with this.
-
-
+            Today, will share one of my code snippet that i wrote, was very proud of
+            it i was even thinking of taking a screenshot,frame it and hang it on my bedroom wall. This was way back
+            while i was still
+            getting my feet wet with C#
+            In this post will talk about how we can configure our application to run automated background tasks
+            at a specific time of the day or after some defined intervals.
           </p>
+          <div class="font-semibold text-4xl mt-2">The Problem</div>
+          <p class="mb-3 indent-1">I will use the ticket CRM solution that i built as an example.You can find the
+            demo and source code <a class="text-blue-300 hover:text-blue-400" href="">here.</a>
+            The project is ideally a ticket support system. The usual stuff that happens
+            in a helpdesk solution. Google's definition of a helpdesk solution:<br><br>
+            <span class="italic">
+              Help desk software is a tool that serves a wide range of customer support activities.
+              You can organize messages, give assistance, and exchange information with customers
+              at a single point of contact.
+              The help desk uses tickets for communication —
+              that's why it's also known as a ticketing system.
+            </span>
+            <br><br>
+            From the definition it means for every customer query that is raised, a ticket number is
+            automatically assigned by the system. This ticket number is what is used to track the status
+            of the customer's query from when it was created,assigned,transferred,resolved and marked
+            as closed.
+            <br>There are five ticket statuses:<br/><br>
+            <span class="font-bold ml-5">Created/New:</span>
+            <span>This is a ticket that has just come in and no agent has been assigned to it</span>
+            <br><br>
+            <span class="font-bold ml-5">Assigned:</span>
+            <span>This is a ticket that has been assigned to an agent and is working on
+            resolving the issue</span><br><br>
+            <span class="font-bold ml-5">Transferred:</span>
+            <span>This is a ticket that has been transferred to an agent if the previously assigned agent
+            is unable to resolve the query</span><br><br>
+            <span class="font-bold ml-5">Resolved:</span>
+            <span>This is a ticket that has been resolved by the agent and the issue is no longer
+            occuring</span><br><br>
+            <span class="font-bold ml-5">Closed:</span>
+            <span>This is a ticket that has been closed by the agent and the customer has also given the
+            feedback that the problem has actually been solved</span><br><br>
+
+
+
+            <br>
+            <span class="font-extrabold mt-3">Problem 1</span><br>
+            <p class="inset-1.5">
+           We need to come up with a way that if a new ticket comes in, its automatically assigned to an
+           agent by the system.The ticket status changes to assigned and an email is sent automatically
+          to the agent to notify that a ticket has been assigned to him/her. We also have to set it in
+          such a way that tickets are equally shared amongst the agents. If there are 20 new tickets and there
+          are five agents available the system will assign each agent four tickets and send an email
+          notification to these agents.
+          Everything has to happen as a background task(Cron Job)
+        </p>
+          <span class="font-extrabold mt-3">Problem 2</span><br>
+          <p class="inset-1.5">
+            We need to mark a ticket as overdue if its not resolved within a specified timeline, could be
+            after 24 hours, 3 days or even after a week, so it varies with the enquiry.So each enquiry has its own agreed timeline set,so
+            that if after a certain period of time passes and it hasn't been marked as resolved,the ticket
+            status changes to overdue. The system should also send subsequent emails to the agent and tell him that there's a ticket
+            that has been marked as overdue and require attention.Again,all these should happen as a background task (Cron Job).
+          </p>
+
+
+
+
+          <div class="font-semibold text-4xl mt-2">The Solution</div>
+
+          I will share small code snippets on how to solve both problem 1 and 2. Will also give explanation of what
+          the code does.<br><br>
+
+          <span class="font-bold">Solving problem 1</span>
+
+          <SnippetOne/>
 
           <p class="mt-3  leading-relaxed text-justify ">
             Basically all these skills in order to better master them, apprenticeship is the way to go. As a developer
@@ -99,7 +159,8 @@
             had to now declare types before declaring variables,classes or functions. <code>"Cannot convert type 'int'
             to
             type 'string' </code>" error
-            messages was all i could see when i closed my eyes. This was because i was coming from a PHP background , from dynamically typed
+            messages was all i could see when i closed my eyes. This was because i was coming from a PHP background ,
+            from dynamically typed
             to statically typed.If you don't know the difference, a statically typed language is where every
             detail about the variables and all the data types must be known before we do the compiling process, while in
             statically typed languages
@@ -116,7 +177,8 @@
             class your lecturer will tell you to write the units
             after your answer after every calculation you do. If it's a unit of distance you would use metres or
             kilometers (sorry my American
-            friends its not miles), time you would use seconds,minutes or hours and temperature you would use degrees celsius (again
+            friends its not miles), time you would use seconds,minutes or hours and temperature you would use degrees
+            celsius (again
             sorry my
             American friends its not fahrenheit).
             <br>
@@ -170,7 +232,8 @@
             Not to brag but i am also a professional guitarist and a pretty good one actually. Thats what
             i usually do with most of my spare time. In order to master such a skill you need to know the
             fundamentals of music, what a note is, what music
-            scales are and even train yourself to develop some sort of relative pitch to be able to detect music notes purely
+            scales are and even train yourself to develop some sort of relative pitch to be able to detect music notes
+            purely
             by ear.<br/>
             In learning a linguistic language such as English, you need to understand the basics of the language, what
             is a noun,adjective and how to structure them in order to constuct
@@ -181,7 +244,8 @@
             when you are in the context of OOP,because no matter the programming language this concepts are the same.
             The only thing that
             changes is the syntax, different programming languages will have different ways of defining a method or
-            variable. So before you actually master a programming language you will have to understand the basics of programming. Basically
+            variable. So before you actually master a programming language you will have to understand the basics of
+            programming. Basically
             it requires dedication and practice in order to master the
             skill.Thus the quote above, there are so many programming languages
             out there. New frameworks(JavaScript being one of the main culprits) are sprouting faster than mushrooms
@@ -223,30 +287,13 @@
     </main>
 
   </div>
-
-
 </template>
 
 <script>
+import SnippetOne from "@/components/snippets/SnippetOne";
 export default {
-  name: "JuniorDeveloper",
-  head(){
-    return{
-      title:'Life As a Junior Developer',
-      meta:[
-        { name: 'og:title', hid:'og:title', property:'og:title', content: 'Life as a Junior Developer'},
-        { name: 'og:description', hid:'og:description',property:'og:description', content: 'Making it as a junior developer tips and tricks' },
-        { name: 'og:url', hid:'og:url',property:'og:url', content: 'https://webmelvin.me/blog/life-as-a-junior-developer' },
-        { name: 'og:image', hid:'og:image',property:'og:image', content: 'https://webmelvin.me/important/junior-dev.jpg' },
-        { name: 'og:type', hid:'og:type',property:'og:type', content: 'article' },
-
-
-
-
-
-      ]
-    }
-  }
+  name: "CronJobs",
+  components:{SnippetOne}
 }
 </script>
 

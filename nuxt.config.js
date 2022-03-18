@@ -63,7 +63,12 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    'vue-social-sharing/nuxt'
+    'vue-social-sharing/nuxt',
+    ['nuxt-highlightjs',
+      {
+        style: 'atom-one-dark'
+      }
+    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeaderNav/>
-    <main class="max-w-7xl  mx-auto overflow-hidden  shadow-2xl bg-gray-50">
+    <main class="max-w-6xl   mx-auto overflow-hidden  shadow-2xl bg-gray-50">
       <img alt="Article" class="object-cover w-full h-96" src="/important/next-step.jpg">
 
       <div class="p-6 text-black ">
