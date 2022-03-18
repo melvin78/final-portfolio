@@ -75,18 +75,45 @@
 
           <div class="font-light text-lg px-2 mb-12 container mx-auto">
 
-            <div class=" flex justify-center grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2">
-              <div id="javascript-chart"></div>
-              <div id="php-chart"></div>
-              <div id="csharp-chart"></div>
-              <div id="vuejs-chart"></div>
-              <div id="laravel-chart"></div>
-              <div id="dotnet-chart"></div>
-              <div id="html-chart"></div>
-              <div id="css-chart"></div>
-              <div id="mysql-chart"></div>
+            <div class=" flex justify-center grid grid-cols-2 gap-2">
+              <div class="mb-1 text-base font-medium">C#</div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-700 h-2.5 rounded-full" style="width: 75%"></div>
+              </div>
+
+              <div class="mb-1 text-base font-medium ">PHP</div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+              </div>
+
+              <div class="mb-1 text-base font-medium ">JavaScript</div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-700 h-2.5 rounded-full" style="width: 73%"></div>
+              </div>
+
+              <div class="mb-1 text-base font-medium ">MySQL</div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 91%"></div>
+              </div>
+
+              <div class="mb-1 text-base font-medium ">Python</div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-700 h-2.5 rounded-full" style="width: 55%"></div>
+              </div>
+
+              <div class="mb-1 text-base font-medium ">CSS</div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+              </div>
+
+              <div class="mb-1 text-base font-medium">HTML</div>
+              <div class="w-full bg-gray-200 rounded-full h-2.5">
+                <div class="bg-blue-700 h-2.5 rounded-full" style="width: 95%"></div>
+              </div>
+
 
             </div>
+
 
           </div>
 
@@ -181,17 +208,19 @@
                   Tools:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Vue</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Vuex</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Bootstrap</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Docker</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Azure Devops</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">RabbitMQ</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">.NET 6</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">MySQL</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Nuxt</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Vuetify</span>
-                  <span class="rounded-xl bg-gray-50 px-3 text-black">Tailwind</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">Vue</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">Docker</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">Azure DevOps</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">RabbitMQ</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">.NET 6</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">MySQL</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">Vuetify</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">Tailwind</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">.NET Core</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">OIDC</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">xUNIT</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">JetBrains Rider</span>
+                  <span class="rounded-xl bg-blue-300 px-3 text-black">ReSharper</span>
                 </div>
               </section>
             </div>
@@ -246,647 +275,15 @@ export default {
   name: "Resume",
 
   mounted() {
-    const Javascript = {
-      series: [83],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              color:"",
-              fontSize: '7px'
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#fcff33'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['Javascript'],
-    };
-
-    const _javascriptChart = new ApexCharts(document.querySelector("#javascript-chart"), Javascript);
-    _javascriptChart.render();
-
-    const php = {
-      series: [90],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#33ceff'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['PHP'],
-    };
-
-    const _phpChart = new ApexCharts(document.querySelector("#php-chart"), php);
-    _phpChart.render();
-
-    const csharp = {
-      series: [80],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#f033ff'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['C#'],
-    };
-
-    const _csharpChart = new ApexCharts(document.querySelector("#csharp-chart"), csharp);
-    _csharpChart.render();
-
-    const vuejs = {
-      series: [78],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#33ff46'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['Vue Js'],
-    };
-
-    const _vuejsChart = new ApexCharts(document.querySelector("#vuejs-chart"), vuejs);
-    _vuejsChart.render();
-
-    const laravel = {
-      series: [81],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#e30808'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['Laravel'],
-    };
-
-    const _laravelChart = new ApexCharts(document.querySelector("#laravel-chart"), laravel);
-    _laravelChart.render();
-
-    const dotnet = {
-      series: [72],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#b808e3'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['.NET'],
-    };
-
-    const _dotnetChart = new ApexCharts(document.querySelector("#dotnet-chart"), dotnet);
-    _dotnetChart.render();
-
-    const html = {
-      series: [98],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#e37208'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['HTML'],
-    };
-
-    const _htmlChart = new ApexCharts(document.querySelector("#html-chart"), html);
-    _htmlChart.render();
-
-    const css = {
-      series: [90],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#084ae3'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['CSS'],
-    };
-
-    const _cssChart = new ApexCharts(document.querySelector("#css-chart"), css);
-    _cssChart.render();
-
-    const mysql = {
-      series: [90],
-      chart: {
-        height: 100,
-        width:100,
-        type: 'radialBar',
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 225,
-          hollow: {
-            margin: 0,
-            size: '60%',
-            background: '#fff',
-            image: undefined,
-            imageOffsetX: 0,
-            imageOffsetY: 0,
-            position: 'front',
-            dropShadow: {
-              enabled: true,
-              top: 3,
-              left: 0,
-              blur: 4,
-              opacity: 0.24
-            }
-          },
-          track: {
-            background: '#fff',
-            strokeWidth: '67%',
-            margin: 0, // margin is in pixels
-            dropShadow: {
-              enabled: true,
-              top: -3,
-              left: 0,
-              blur: 4,
-              opacity: 0.35
-            }
-          },
-
-          dataLabels: {
-            show: true,
-            name: {
-              show: true,
-              fontSize: '10px',
-              color:""
-            },
-            value: {
-              formatter: function(val) {
-                return parseInt(val);
-              },
-
-              show: false,
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'solid',
-        colors:['#e3c208'],
-
-      },
-      stroke: {
-        lineCap: 'round'
-      },
-      labels: ['MYSQL'],
-    };
-    const _mysqlChart  = new ApexCharts(document.querySelector("#mysql-chart"), mysql);
-    _mysqlChart.render();
 
 
 
-  }
+
+  },
+  methods:{
+
+}
+
 }
 </script>
 
@@ -894,4 +291,5 @@ export default {
 html {
   font-family: 'Fredoka', sans-serif;
 }
+
 </style>

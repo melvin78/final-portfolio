@@ -7,7 +7,7 @@
           <div class="py-8 flex flex-wrap md:flex-nowrap">
             <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
               <span class="font-semibold title-font text-white">The Mind</span>
-              <span class="mt-1 text-blue-400 text-sm">Personal Thoughts & Opinions</span>
+              <span class="mt-1 text-blue-400 text-sm">Thoughts & Opinions</span>
             </div>
             <div class="md:flex-grow">
               <h2 class="text-2xl font-medium text-gray-300 title-font mb-2 font-bold">Life of a Junior Developer</h2>
@@ -44,15 +44,14 @@
           </div>
           <div class="py-8 flex flex-wrap md:flex-nowrap">
             <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-              <span class="font-semibold title-font text-white ">Developer Experience</span>
-              <span class="text-sm text-blue-400">12 Jun 2019</span>
+              <span class="font-semibold title-font text-white ">The Program</span>
+              <span class="text-sm text-blue-400">Time to code </span>
             </div>
             <div class="md:flex-grow">
-              <h2 class="text-2xl font-medium text-gray-300 font-bold title-font mb-2">Woke master cleanse drinking
-                vinegar salvia</h2>
-              <p class="leading-relaxed text-gray-200">Glossier echo park pug, church-key sartorial biodiesel
-                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke
-                vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
+              <h2 class="text-2xl font-medium text-gray-300 font-bold title-font mb-2">Cron Jobs</h2>
+              <p class="leading-relaxed text-gray-200">Today, will share one of my code snippet that i wrote, was very proud of
+              it i was even thinking of taking a screenshot,frame it and hang it on my bedroom wall. This was way back while i was still
+              getting my feet wet with C#.</p>
               <a class="text-indigo-500 inline-flex items-center mt-4 cursor-pointer">Read More
                 <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
                      stroke-linecap="round" stroke-linejoin="round">
