@@ -604,14 +604,12 @@
 </template>
 
 <script>
-import FullVersion from "@/components/FullVersion";
 import {gsap} from "gsap";
 import {TextPlugin} from "gsap/TextPlugin";
 import {Draggable} from "gsap/all"
 
 export default {
   name: "Hero",
-  components: {FullVersion},
 
   data() {
     return {

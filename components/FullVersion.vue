@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import {gsap, MotionPathPlugin} from "gsap/all";
+// import {gsap, MotionPathPlugin} from "gsap/all";
 
 export default {
   name: "FullVersion",

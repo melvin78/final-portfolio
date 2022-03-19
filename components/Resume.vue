@@ -268,7 +268,7 @@
 </template>
 
 <script>
-import ApexCharts from 'apexcharts'
+// import ApexCharts from 'apexcharts'
 
 
 export default {

@@ -1,7 +1,7 @@
 <template>
   <div>
   <pre>
-        <code v-highlight class="csharp hljs">
+        <code v-highlight class="csharp">
           //ticket entity class
     public class Ticket : BaseEntity
        {
