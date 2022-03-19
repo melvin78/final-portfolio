@@ -21,7 +21,7 @@
           </p>
           <div class="font-semibold text-4xl mt-2">The Problem</div>
           <p class="mb-3 indent-1">I will use the ticket CRM solution that i built as an example.You can find the
-            demo  <a class="text-blue-300 hover:text-blue-400" href="">here.</a>
+            demo <a class="text-blue-300 hover:text-blue-400" href="">here.</a>
             The project is ideally a ticket support system. The usual stuff that happens
             in a helpdesk solution. Google's definition of a helpdesk solution:<br><br>
             <span class="italic">
@@ -54,33 +54,34 @@
             feedback that the problem has actually been solved</span><br><br>
 
 
-
             <br>
             <span class="font-extrabold mt-3">Problem 1</span><br>
-            <p class="inset-1.5">
-           We need to come up with a way that if a new ticket comes in, its automatically assigned to an
-           agent by the system.The ticket status changes to assigned and an email is sent automatically
-          to the agent to notify that a ticket has been assigned to him/her. We also have to set it in
-          such a way that tickets are equally shared amongst the agents. If there are 20 new tickets and there
-          are five agents available the system will assign each agent four tickets and send an email
-          notification to these agents.
-          Everything has to happen as a background task(Cron Job)
-        </p>
+          <p class="inset-1.5">
+            We need to come up with a way that if a new ticket comes in, its automatically assigned to an
+            agent by the system.The ticket status changes to assigned and an email is sent automatically
+            to the agent to notify that a ticket has been assigned to him/her. We also have to set it in
+            such a way that tickets are equally shared amongst the agents. If there are 20 new tickets and there
+            are five agents available the system will assign each agent four tickets and send an email
+            notification to these agents.
+            Everything has to happen as a background task(Cron Job)
+          </p>
           <span class="font-extrabold mt-3">Problem 2</span><br>
           <p class="inset-1.5">
             We need to mark a ticket as overdue if its not resolved within a specified timeline, could be
-            after 24 hours, 3 days or even after a week, so it varies with the enquiry.So each enquiry has its own agreed timeline set,so
+            after 24 hours, 3 days or even after a week, so it varies with the enquiry.So each enquiry has its own
+            agreed timeline set,so
             that if after a certain period of time passes and it hasn't been marked as resolved,the ticket
-            status changes to overdue. The system should also send subsequent emails to the agent as a reminder that there's a ticket
-            that has been marked as overdue and requires their attention.Again,all these should happen as a background task (Cron Job).
+            status changes to overdue. The system should also send subsequent emails to the agent as a reminder that
+            there's a ticket
+            that has been marked as overdue and requires their attention.Again,all these should happen as a background
+            task (Cron Job).
           </p>
-
-
 
 
           <div class="font-semibold text-4xl mt-2">The Solution</div>
 
-          I will share the entity classes that we will be dealing with i.e Ticket and Agents.In logical terms a ticket belongs to an agent and an agent can have many tickets assigned to him.<br><br>
+          I will share the entity classes that we will be dealing with i.e Ticket and Agents.In logical terms a ticket
+          belongs to an agent and an agent can have many tickets assigned to him.<br><br>
 
 
           <SnippetOne/>
@@ -92,8 +93,6 @@
           <AgentEntity/>
 
 
-
-
           <span class="font-bold">Solving problem 1</span>
 
           <p class="mt-2 text-black leading-relaxed text-justify ">
@@ -102,9 +101,12 @@
             We need to find a way to assign the tickets within the shortest time possible. To also ensure fair
             distribution of tickets we use tokens. Whichever agent will be having the token, the ticket assignment
             will start from him and move sequentially to the next agent until all tickets have been assigned. <br>
-            The agent to be assigned the last ticket is, the one who will receive the token. So that when the next batch of tickets
-            come in we wont start from the first agent but whoever has the token, and how will we know who has the token,
-            when fetching the list of agents from the data source we will order by <code>TokenAssignmentDate</code> in descending order.<br><br>
+            The agent to be assigned the last ticket is, the one who will receive the token. So that when the next batch
+            of tickets
+            come in we wont start from the first agent but whoever has the token, and how will we know who has the
+            token,
+            when fetching the list of agents from the data source we will order by <code>TokenAssignmentDate</code> in
+            descending order.<br><br>
             So the code responsible of achieving this task should do the following: <br><br>
             <span class="ml-5 mt-5 ">1. Fetch all the tickets that have a status of "New" or rather ones
             that dont have an agent assigned yet.</span><br>
@@ -118,20 +120,32 @@
             </span>
 
 
-          </p>
+          </p><br><br>
 
-
-          <div class="font-semibold text-4xl mt-2 mb-2">Conclusion</div>
-          <p class="mb-5">
-            This has been my two cents on how the experience was when i was starting out as a developer, it might or
-            might not apply
-            to your situation but this is how i managed. So before you think of giving up try following
-            these steps and everything little thing is gonna be alright
-            <bdi class="text-sm font-extralight ">* insert Bob Marley voice from three little birds *</bdi>
-            . I will share more tips on how to even better improve your skills on the next one.
+          <p>
+            Lets start,Now we have to create an Interface called <code>IAssignTicketService</code>. It will define
+            methods that our class should implement. Again am just sharing part of the code snippets and not the whole
+            solution. Full source code can be found <a class="text-blue-300 hover:text-blue-400">here</a>
 
           </p>
+          <span class="font-bold ml-5">Requirements</span>
+          <p class="leading-relaxed justify-center">
 
+            Will add two nuget packages to our solution. The first one being <a
+            class="text-blue-300 hover:text-blue-400" href="https://github.com/HangfireIO/Cronos">Cronos</a>.
+            This package provides a very simple API that we can use to define cron expressions. Basically it
+            will act as our clock and it will run our background task after defined time intervals.
+            The second is <a class="text-blue-300 hover:text-blue-400" href="https://github.com/alicommit-malp/roundrobin">Round Robin</a>.
+            This package will help us convert our list of agents to a linked list data structure,so that when assigning and
+            re-assigning we can easily identify who is the first and who is the last agent. It also has extension methods
+            like <code>Next()</code> and <code>First()</code> more on that later
+          </p>
+
+          <span class="font-bold text-2xl">Lets Start</span>
+
+          <AssignTicketService/>
+
+          <AssignTicketServiceClasss/>
           <div class="relative flex py-5 items-center">
             <div class="flex-grow border-t border-gray-400"></div>
             <span class="flex-shrink mx-4 text-2xl text-gray-800"></span>
@@ -154,9 +168,14 @@ import SnippetOne from "@/components/snippets/SnippetOne";
 import FactorySnippet from "~/components/snippets/FactorySnippet";
 import SpecficationPattern from "~/components/snippets/SpecficationPattern";
 import AgentEntity from "~/components/snippets/AgentEntity";
+import AssignTicketService from "@/components/snippets/AssignTicketService";
+import AssignTicketServiceClasss from "@/components/snippets/AssignTicketServiceClasss";
+
 export default {
   name: "CronJobs",
-  components:{AgentEntity, SpecficationPattern, FactorySnippet, SnippetOne}
+  components: {
+    AssignTicketServiceClasss,
+    AssignTicketService, AgentEntity, SpecficationPattern, FactorySnippet, SnippetOne}
 }
 </script>
 
