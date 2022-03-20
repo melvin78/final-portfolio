@@ -138,7 +138,7 @@
             The second is <a class="text-blue-300 hover:text-blue-400" href="https://github.com/alicommit-malp/roundrobin">Round Robin</a>.
             This package will help us convert our list of agents to a linked list data structure,so that when assigning and
             re-assigning we can easily identify who is the first and who is the last agent. It also has extension methods
-            like <code>Next()</code> and <code>First()</code> more on that later
+            like <code>Next()</code> and <code>First()</code> more on that later.
           </p>
 
           <span class="font-bold text-2xl">Lets Start</span>
@@ -146,6 +146,11 @@
           <AssignTicketService/>
 
           <AssignTicketServiceClasss/>
+
+          <IntializeConstructor/>
+
+          <RoundRobin/>
+
           <div class="relative flex py-5 items-center">
             <div class="flex-grow border-t border-gray-400"></div>
             <span class="flex-shrink mx-4 text-2xl text-gray-800"></span>
@@ -170,12 +175,15 @@ import SpecficationPattern from "~/components/snippets/SpecficationPattern";
 import AgentEntity from "~/components/snippets/AgentEntity";
 import AssignTicketService from "@/components/snippets/AssignTicketService";
 import AssignTicketServiceClasss from "@/components/snippets/AssignTicketServiceClasss";
+import IntializeConstructor from "@/components/snippets/IntializeConstructor";
+import RoundRobin from "@/components/snippets/RoundRobin";
 
 export default {
   name: "CronJobs",
   components: {
+    IntializeConstructor,
     AssignTicketServiceClasss,
-    AssignTicketService, AgentEntity, SpecficationPattern, FactorySnippet, SnippetOne}
+    AssignTicketService, AgentEntity, SpecficationPattern, FactorySnippet, SnippetOne,RoundRobin}
 }
 </script>
 

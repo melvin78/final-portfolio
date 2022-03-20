@@ -29,7 +29,9 @@
       to the rescue. <code> IUnitOfWork</code> responsible for creating repositories for our entities(repository pattern being used here),
       <code>ITicketService</code> responsible for handling all CRUD operations that will take place in our ticket entity,
       basically any operation to do with a ticket will be housed here,same thing goes for <code>IAgentService</code>.
-      Had shared the properties present in both of these entities in the previous snippets.
+      Had shared the properties present in both of these entities in the previous snippets. In the constructor we are immediately
+      calling two methods and saving the result in memory for later i.e <code>GetAllUnassignedTickets</code>
+      and <code>GetAgentList().</code> Get count of all tickets that need assignment and fetch all agents from our database.
     </p>
   </div>
 </template>
