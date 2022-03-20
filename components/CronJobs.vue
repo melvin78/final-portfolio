@@ -65,17 +65,7 @@
             notification to these agents.
             Everything has to happen as a background task(Cron Job)
           </p>
-          <span class="font-extrabold mt-3">Problem 2</span><br>
-          <p class="inset-1.5">
-            We need to mark a ticket as overdue if its not resolved within a specified timeline, could be
-            after 24 hours, 3 days or even after a week, so it varies with the enquiry.So each enquiry has its own
-            agreed timeline set,so
-            that if after a certain period of time passes and it hasn't been marked as resolved,the ticket
-            status changes to overdue. The system should also send subsequent emails to the agent as a reminder that
-            there's a ticket
-            that has been marked as overdue and requires their attention.Again,all these should happen as a background
-            task (Cron Job).
-          </p>
+
 
 
           <div class="font-semibold text-4xl mt-2">The Solution</div>
@@ -150,7 +140,25 @@
           <IntializeConstructor/>
 
           <RoundRobin/>
+          <p class="mt-2 text-black leading-relaxed text-justify ">
+          Now that we have encapsulated the ticket auto assignment logic into one method <code>AssignRoundRobin()</code>
+            its now time to make it execute after a defined time intervals in this case after every 5 minutes.
+          </p>
 
+          <CronJobAbstract/>
+
+          <AssignTIcketCronJob/>
+
+          <ExtensionCronJob/>
+
+          <StartCronJob/>
+          <div class="font-semibold text-4xl mt-2 mb-2">Conclusion</div>
+          <p class="mb-5">
+           This is just an overview of how we can configure background tasks with .net. In a real live environment
+            we would use service brokers like RabbitMQ or redis. Full source code can be found
+            <a class="text-blue-300 hover:text-blue-400">here</a>
+
+          </p>
           <div class="relative flex py-5 items-center">
             <div class="flex-grow border-t border-gray-400"></div>
             <span class="flex-shrink mx-4 text-2xl text-gray-800"></span>
@@ -177,10 +185,18 @@ import AssignTicketService from "@/components/snippets/AssignTicketService";
 import AssignTicketServiceClasss from "@/components/snippets/AssignTicketServiceClasss";
 import IntializeConstructor from "@/components/snippets/IntializeConstructor";
 import RoundRobin from "@/components/snippets/RoundRobin";
+import CronJobAbstract from "@/components/snippets/CronJobAbstract";
+import AssignTIcketCronJob from "@/components/snippets/AssignTIcketCronJob";
+import ExtensionCronJob from "@/components/snippets/ExtensionCronJob";
+import StartCronJob from "@/components/snippets/StartCronJob";
 
 export default {
   name: "CronJobs",
   components: {
+    StartCronJob,
+    ExtensionCronJob,
+    AssignTIcketCronJob,
+    CronJobAbstract,
     IntializeConstructor,
     AssignTicketServiceClasss,
     AssignTicketService, AgentEntity, SpecficationPattern, FactorySnippet, SnippetOne,RoundRobin}
