@@ -156,7 +156,7 @@
           <p class="mb-5">
            This is just an overview of how we can configure background tasks with .net. In a real live environment
             we would use service brokers like RabbitMQ or redis. Full source code can be found
-            <a class="text-blue-300 hover:text-blue-400">here</a>
+            <a href="https://github.com/melvin78/TicketCRM" target="_blank" class="text-blue-300 hover:text-blue-400">here</a>
 
           </p>
           <div class="relative flex py-5 items-center">
