@@ -10,7 +10,7 @@
     <Hero/>
 
 <!--    <FullVersion/>-->
-
+<ExploreSection/>
   </div>
 
 
@@ -22,9 +22,10 @@
 
 import HeaderNav from "@/components/HeaderNav";
 import Hero from "@/components/Hero";
+import ExploreSection from "@/components/explore/ExploreSection";
 export default {
   name: 'IndexPage',
-  components:{Hero,HeaderNav},
+  components:{ExploreSection, Hero,HeaderNav},
   head(){
     return{
       title:'Home Paqe'
