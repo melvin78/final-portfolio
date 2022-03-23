@@ -10,7 +10,7 @@
     <Hero/>
 
 <!--    <FullVersion/>-->
-<ExploreSection/>
+
   </div>
 
 
