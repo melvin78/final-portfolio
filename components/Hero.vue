@@ -607,13 +607,22 @@
 import {gsap} from "gsap";
 import {TextPlugin} from "gsap/TextPlugin";
 import {Draggable} from "gsap/all"
+import {mapActions} from "vuex";
 
 export default {
   name: "Hero",
   methods:{
     Scroll(){
-      document.getElementById('explore').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
-    }
+
+      this.SetExplore(true).then(()=>{
+        document.getElementById('Explore').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+
+      })
+    },
+
+    ...mapActions({
+      SetExplore:'explore/SetExplore'
+    })
   },
 
   data() {
