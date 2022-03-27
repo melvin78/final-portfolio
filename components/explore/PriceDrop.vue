@@ -6,7 +6,7 @@
         <div class="w-full sm:p-4 px-4 mb-6">
           <h1 class="title-font font-bold text-xl mb-2 text-white">Price Tracker</h1>
           <div class="leading-relaxed text-white font-light mb-3 ">
-           An automatic way to keep track of prices of items from you favorite shop and now when their prices drop.
+           An automatic way to keep track of prices of items from you favorite shop and know when their prices drop.
             <div class="flex justify-start  flex-wrap mt-2 ml-2">
                <span
                  class="px-4  py-2 rounded-full text-gray-500 bg-blue-200 font-semibold text-sm flex align-center w-max  ">
