@@ -11,6 +11,7 @@
 
     <!--    <FullVersion/>-->
  <ExploreSectionTwo/>
+    <PriceDrop/>
   </div>
 
 
@@ -23,10 +24,11 @@ import HeaderNav from "@/components/HeaderNav";
 import Hero from "@/components/Hero";
 import ExploreSection from "@/components/explore/ExploreSection";
 import ExploreSectionTwo from "@/components/explore/ExploreSectionTwo";
+import PriceDrop from "@/components/explore/PriceDrop";
 
 export default {
   name: 'IndexPage',
-  components: {ExploreSectionTwo, ExploreSection, Hero, HeaderNav},
+  components: {PriceDrop, ExploreSectionTwo, ExploreSection, Hero, HeaderNav},
   head() {
     return {
       title: 'Home Paqe'
