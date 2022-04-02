@@ -10,7 +10,9 @@
           @click="$router.push('/')">Home</span>
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center justify-center">
-        <a class="text-2xl hover:underline mr-5 text-white link link-hover hover:text-blue-400 cursor-pointer">Work</a>
+        <a
+          @click="$router.push('/work-home')"
+          class="text-2xl hover:underline mr-5 text-white link link-hover hover:text-blue-400 cursor-pointer">Work</a>
         <a class="text-2xl hover:underline mr-5 text-white link link-hover hover:text-blue-400 cursor-pointer"
            @click="$router.push('/resume')">Resume</a>
         <a class="text-2xl hover:underline mr-5 text-white link link-hover hover:text-blue-400 cursor-pointer"

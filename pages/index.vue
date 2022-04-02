@@ -1,16 +1,12 @@
 <template>
-  <!--  <div class="flex justify-around">-->
-  <!--    <Javascript/>-->
-  <!--    <StylingTwo/>-->
-  <!--  </div>-->
+
   <div>
     <HeaderNav/>
 
 
     <Hero/>
 
-    <!--    <FullVersion/>-->
- <ExploreSectionTwo/>
+    <ExploreSectionTwo/>
     <PriceDrop/>
   </div>
 

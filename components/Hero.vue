@@ -614,10 +614,11 @@ export default {
   methods:{
     Scroll(){
 
-      this.SetExplore(true).then(()=>{
-        document.getElementById('Explore').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
-
-      })
+      this.$router.push('/work-home')
+      // this.SetExplore(true).then(()=>{
+      //   document.getElementById('Explore').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+      //
+      // })
     },
 
     ...mapActions({
