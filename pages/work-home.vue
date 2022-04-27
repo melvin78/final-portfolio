@@ -49,5 +49,7 @@ export default {
 </script>
 
 <style scoped>
-
+html{
+  font-family: 'Rajdhani',serif;
+}
 </style>

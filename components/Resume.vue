@@ -22,7 +22,7 @@
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
-            <h2 class="text-xl font-semibold mb-4">Contact</h2>
+            <h2 class="text-xl font-bold text-black mb-4">Contact</h2>
             <div class="flex items-center my-3">
               <img
                 src="/assets/mail-outline.svg"
@@ -40,7 +40,7 @@
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
-            <h2 class="text-xl font-semibold mb-4">On the Web</h2>
+            <h2 class="text-xl font-bold text-black mb-4">On the Web</h2>
             <div class="flex items-center my-3">
               <img
                 src="/assets/logo-github.svg"
@@ -71,7 +71,7 @@
               >
             </div>
           </div>
-          <h2 class="text-xl font-semibold mb-4">Skills</h2>
+          <h2 class="text-xl font-bold text-black mb-4">Skills</h2>
 
           <div class="font-light text-lg px-2 mb-12 container mx-auto">
 
@@ -118,13 +118,19 @@
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
-            <h2 class="text-xl font-semibold mb-4">Education</h2>
+            <h2 class="text-xl font-bold text-black mb-4">Education</h2>
             <h3 class="font-semibold">BSc. Computer Science</h3>
             <p>2017-2021 Catholic University Of Eastern Africa</p>
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
-            <h2 class="text-xl font-semibold mb-4">Languages</h2>
+            <h2 class="text-xl font-bold text-black mb-4">Hobbies</h2>
+            <p>Chess</p>
+            <p>Playing Guitar</p>
+          </div>
+
+          <div class="font-light text-lg px-2 mb-12">
+            <h2 class="text-xl font-bold text-black mb-4">Languages</h2>
 
             <ul class='marker:text-green list-outside list-disc ml-6'>
               <li>English - Fluent</li>
