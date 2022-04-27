@@ -51,7 +51,7 @@ export default {
   googleFonts: {
     families: {
       Roboto: true,
-      'Josefin+Sans': true,
+      'Rajdhani': true,
       Lato: [100, 300],
       Raleway: {
         wght: [100, 400],
@@ -63,6 +63,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     'vue-social-sharing/nuxt',
+    '@nuxtjs/google-fonts',
     ['nuxt-highlightjs',
       {
         style: 'atom-one-dark'

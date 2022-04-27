@@ -35,5 +35,8 @@ export default {
 
 <style>
 
+html{
+  font-family: 'Rajdhani',serif;
+}
 
 </style>
